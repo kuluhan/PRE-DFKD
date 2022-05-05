@@ -39,7 +39,7 @@ Download link: https://drive.google.com/drive/folders/1fTUl8Igs5gEbWrdrwZd_22YEh
 ### run PRE-DFKD (dataset: CIFAR100, teacher: ResNet34, student: ResNet18)
 
 ```bash
-python cifar10.sh
+python main.py
 ```
 
 ## Citation
