@@ -19,14 +19,38 @@ The project is structured as follows:
 
 ## Running the code
 
-First, obtain teacher models to be distilled
+First create a cache directory in the parent directory of this project with two sub-folders: [`data/`] and [`models/`]
+```
++-- cache
+    +-- data
+    +-- models
++-- PRE-DFKD
+    +-- ...
+```
+
+The datasets will be downloaded to the [`cache/data`] folder
+
+Then, obtain teacher models to be distilled and save them in [`cache/models`] folder
 
 ### Download pre-trained teachers
 
 Download link: https://drive.google.com/drive/folders/1fTUl8Igs5gEbWrdrwZd_22YEhl9ZO7rP?usp=sharing
 
-### run PRE-DFKD to transfer knowledge from ResNet34 teacher trained on cifar100 dataset to ResNet18 student
+### run PRE-DFKD (dataset: CIFAR100, teacher: ResNet34, student: ResNet18)
 
-```python
+```bash
 python cifar10.sh
 ```
+
+## Citation
+
+Please consider citing our work if you make use of it
+```
+@article{binici2022robust,
+  title={Robust and Resource-Efficient Data-Free Knowledge Distillation by Generative Pseudo Replay},
+  author={Binici, Kuluhan and Aggarwal, Shivam and Pham, Nam Trung and Leman, Karianto and Mitra, Tulika},
+  journal={arXiv preprint arXiv:2201.03019},
+  year={2022}
+}
+```
+
